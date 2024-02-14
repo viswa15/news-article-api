@@ -3,6 +3,8 @@ const app = express();
 const sqlite3 = require("sqlite3");
 const path = require("path");
 const { open } = require("sqlite");
+const cors = require("cors");
+app.use(cors()); //used to access the urls in any domains
 
 const dbPath = path.join(__dirname, "articles.db");
 
