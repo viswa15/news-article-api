@@ -1,9 +1,12 @@
 {
+  "homepage": "https://viswa15.github.io/news-article-api",
   "name": "node-practie-1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy":"npm run-script",
+    "deploy" : "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +18,8 @@
     "nodemon": "^3.0.3",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
