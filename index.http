@@ -1,4 +1,4 @@
-get http://localhost:3000/articles/
+get http://localhost:3004/articles/
 
 ###
 
