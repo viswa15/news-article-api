@@ -45,7 +45,7 @@ app.get("/articles/:articleId", async (request, response) => {
 });
 
 //API for returning articles based on its category
-app.get("/articles/:category", async (request, response) => {
+app.get("/articles/", async (request, response) => {
   const { category } = request.query;
   const dbQuery = `select * from article where category = '${category}';`;
   const article = await db.all(dbQuery);
