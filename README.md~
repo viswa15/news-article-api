@@ -1,0 +1,15 @@
+# News Article API
+
+This repository contains a simple API which stores and retrieves news articles and their summaries from a SQLite database.
+
+The API is built using Express.js and uses the Better-SQLite3 library to interact with the database.
+
+The API is split into three endpoints:
+
+- `GET /articles`: Returns all articles in the database
+
+- `GET /articles/:id`: Returns a single article by its ID
+
+- `GET /articles?category=<category>`: Returns all articles with the specified category
+
+This API is deployed on GitHub Pages and can be accessed at <https://viswa15.github.io/news-article-api>.
